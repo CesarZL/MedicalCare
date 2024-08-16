@@ -1,0 +1,9 @@
+@import 'additional-styles/flatpickr.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
