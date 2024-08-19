@@ -62,6 +62,8 @@ Route::middleware([
     Route::put('/medico/mis-citas/aceptar/{cita}', [CitaController::class, 'CitaAceptar'])->name('cita.aceptar');
     Route::put('/medico/mis-citas/completar/{cita}', [CitaController::class, 'CitaCompletar'])->name('cita.completar');
     Route::get('/medico/mis-citas/chat/{cita}', [CitaController::class, 'MedicoCitaChat'])->name('cita.chat-medico');
+    Route::put('/medico/mis-citas/cancelar/{cita}', [CitaController::class, 'CitaCancelar'])->name('cita.medico-cancelar');
+
 });
 
 Route::middleware([

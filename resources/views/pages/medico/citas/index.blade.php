@@ -45,7 +45,7 @@
                                     </button>
                                 </form>
 
-                                <form action="{{ route('cita.cancelar', $cita->id) }}" method="POST">
+                                <form action="{{ route('cita.medico-cancelar', $cita->id) }}" method="POST">
                                     @csrf
                                     @method('PUT')
                                     <button type="submit" class="rounded-lg text-sm font-semibold py-2 px-4 ms-2  bg-white border border-red-100 text-red-400 hover:text-red-400 hover:bg-red-100" data-confirm-delete="true">
